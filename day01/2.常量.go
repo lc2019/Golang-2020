@@ -2,8 +2,9 @@ package main
 
 import "fmt"
 
+const PI float64 = 3.14
+
 func main() {
-	const PI = 3.14
 
 	//如果批量声明变量某一行没有赋值的时候，默认继承上面一行的值
 	const (
@@ -19,7 +20,9 @@ func main() {
 		a3 = 3    //2
 		a4 = iota //3
 	)
+	//全局有效
 	fmt.Println(PI)
+
 	fmt.Println(P1, P2, P3)
 
 	fmt.Println(a1, a2, a3, a4)
@@ -30,4 +33,11 @@ func main() {
 	)
 
 	fmt.Println(b1, b2)
+
+	const (
+		n1 = iota //0
+		_  = iota
+		n3 = iota //2
+	)
+	fmt.Println(n1, n3)
 }

@@ -19,4 +19,9 @@ func main() {
 	} else {
 		fmt.Println("go to")
 	}
+
+	//特殊写法
+	if age2 := 18; age2 > 20 { //变量的范围存在if语句,作为1个判断整体
+		fmt.Println("xiaohai")
+	}
 }

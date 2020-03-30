@@ -24,5 +24,9 @@ func main() {
 	s2 := "lulu"
 	fmt.Println(s2)
 
+	//匿名变量
+	a, _ := 10, 20
+	fmt.Println(a)
+
 	fmt.Println("人生苦短，let's go")
 }
