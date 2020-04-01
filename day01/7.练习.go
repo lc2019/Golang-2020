@@ -14,11 +14,11 @@ func main() {
 		flag := true
 		for j := 2; j < i; j++ {
 			if i%j == 0 {
-				flag = false
+				flag = false // 有因素
 				break
 			}
 		}
-		if flag {
+		if flag { //没有因数
 			fmt.Print(i)
 		}
 	}
