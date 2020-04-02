@@ -12,7 +12,7 @@ func main() {
 		name:  "xiaoxuanf",
 		price: 100,
 	}
-	x = h1 //haier实现了洗衣机的全部接口的方法
+	x = h1 //haier实现了洗衣机的全部接口的方法，就是实现了这个接口
 	x.dry()
 	x.wash()
 
@@ -30,6 +30,7 @@ type xiyiji interface {
 	wash()
 	dry()
 }
+
 type haier struct {
 	name  string
 	price int
